@@ -1,0 +1,125 @@
+
+.container{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #ffcc00, #ff6600);
+}
+.title{
+    margin-top: 0px;
+   margin-bottom: 10px;
+   
+    color: #0000FF;
+    /* background: blueviolet; */
+   
+}
+.playground{
+    margin-top: 40px;
+    margin-left: 39.5%;
+    height: 310px;
+    width: 310px;
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: linear-gradient(to bottom right, #b3e6ff, #ffe6b3);
+    height: 100px;
+    width: 100px;
+}
+.container h2{
+    color: rgb(244, 3, 3);
+    margin-top: 40px;
+}
+.option{
+    height: 50px;
+    width: 200px;
+    margin-left: 43%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    
+}.option h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background: rgb(160, 44, 44);
+    margin: 34px;
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.option h1:hover{
+    background: rgb(51, 42, 42);
+    transition: ease-in;
+    transform: translateY(-2px);
+}
+.button button{
+    align-items: center;
+      margin-top: 40px;
+      width: 79px;
+      height: 35px;
+      font-size: larger;
+      font-weight: 600;
+      background: blue;
+      color: white;
+      border: transparent;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+}
+.button button:hover{
+    background: rgb(71, 71, 194);
+    transform: translateX(2px);
+}
+
+@media screen and (max-width: 768px) {
+    .playground{
+        margin-left: 28%;
+        
+    }
+    .option{
+        margin-left: 35%;
+
+    }
+}
+@media screen and (max-width: 570.98px) {
+    .playground{
+        margin-left: 15%;
+    }
+    .option{
+        margin-left: 28%;
+
+    }
+}
+@media screen and (max-width: 400px) {
+    .playground{
+        margin-left: 2%;
+    }
+    .option{
+        margin-left: 9%;
+
+    }
+}
